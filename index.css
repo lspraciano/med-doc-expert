@@ -1,0 +1,51 @@
+/* Resetando margens, espaçamentos e bordas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Removendo decorações de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Removendo bullet points e estilos de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Garantindo que imagens respeitem o container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Removendo a aparência de botões e inputs */
+button, input, textarea {
+  border: none;
+  background: none;
+  outline: none;
+  font: inherit;
+}
+
+/* Normalizando elementos de tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Garantindo altura mínima para o body e html */
+html, body {
+  height: 100%;
+  font-family: sans-serif; /* Define uma fonte padrão */
+}
+
+/* Adicionando herança de tamanho de fonte */
+body {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
