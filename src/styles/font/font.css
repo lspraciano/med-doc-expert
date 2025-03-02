@@ -1,0 +1,14 @@
+:root {
+    --font-base: 16px;
+    --scale: 1.25;
+    --font-h1: 3.812rem; /* 61px */
+    --font-h2: 3.062rem; /* 49px */
+    --font-h3: 2.438rem; /* 39px */
+    --font-h4: 1.938rem; /* 31px */
+    --font-h5: 1.562rem; /* 25px */
+    --font-h6: 1.250rem; /* 20px */
+    --font-p: 1.000rem; /* 16px */
+    --font-small: 0.812rem; /* 13px */
+    --font-message-alert: 14px; /* 14px */
+    --font-label: 0.625rem; /* 10px */
+}

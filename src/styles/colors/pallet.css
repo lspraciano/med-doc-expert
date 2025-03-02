@@ -1,0 +1,24 @@
+:root {
+    --branco-neve: #F5F6F4; /* Branco Neve */
+    --cinza-palido: #A8A9A6; /* Cinza Pálido */
+    --cinza-nublado: #E0E1DD; /* Cinza Nublado */
+    --cinza-grafite: #4E4F4D; /* Cinza Grafite */
+    --cinza-gelo: #DDDEE2; /* Cinza Gelo */
+    --verde-neve: #E3FAE9; /* Verde Neve */
+    --cinza-azulado: #C4CCD5; /* Cinza Azulado */
+    --verde-musgo: #206F36; /* Verde Musgo */
+    --cinza-chumbo: #B4B8BD; /* Cinza Chumbo */
+    --rosa-algodao: #FFF1F2; /* Rosa Algodão */
+    --azul-boreal: #778DA9; /* Azul Boreal */
+    --vermelho: #A8101A; /* Vermelho */
+    --azul-ardosia: #5F7187; /* Azul Ardósia */
+    --bege-areia: #F6ECE0; /* Bege Areia */
+    --azul-aco: #415A77; /* Azul Aço */
+    --laranja-dourado: #FAA14F; /* Laranja Dourado */
+    --azul-noite: #0A1420; /* Azul Noite */
+    --azul-algodao: #E8EEF2; /* Azul Algodão */
+    --cor-btn-habilitado: #0C111B; /* Cor_Btn_Habilitado */
+    --azul-nevoado: #7B99BF; /* Azul Nevoado */
+    --cor-btn-hover: #1B263B; /* Cor_Btn_Hover */
+    --cor-btn-desabil: #545B63; /* Cor_Btn_Desabil */
+}
