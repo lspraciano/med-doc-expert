@@ -15,6 +15,7 @@ export const CircularCheckbox = (
                 type="checkbox"
                 className="circular-checkbox__input"
                 {...checkboxProps}
+                disabled={true}
             />
             {
                 label && (

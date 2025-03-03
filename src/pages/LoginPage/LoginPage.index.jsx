@@ -37,6 +37,7 @@ export const LoginPage = () => {
                                 id={"2"}
                                 label={"Senha"}
                                 placeholder={"Senha"}
+                                isPassword={true}
                                 onChange={
                                     (event) => setPassword(event.target.value)
                                 }

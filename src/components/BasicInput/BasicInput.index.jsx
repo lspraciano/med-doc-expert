@@ -6,6 +6,7 @@ export const BasicInput = (
         id,
         label,
         placeholder,
+        isPassword,
         ...inputProps
     }
 ) => {
@@ -21,6 +22,7 @@ export const BasicInput = (
             <input
                 id={id}
                 className="basic-input__input"
+                type={isPassword ? "password" : "text"}
                 {...inputProps}
                 placeholder={placeholder}
             />
@@ -31,5 +33,6 @@ export const BasicInput = (
 BasicInput.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string,
+    isPassword: false,
     placeholder: PropTypes.string,
 };
