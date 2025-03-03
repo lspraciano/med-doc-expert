@@ -5,6 +5,7 @@ import {LoginPage} from "../pages/LoginPage/LoginPage.index.jsx";
 import {RecoveryPasswordPage} from "../pages/RecoveryPasswordPage/RecoveryPasswordPage.index.jsx";
 import {CreatePasswordPage} from "../pages/CreatePasswordPage/CreatePasswordPage.index.jsx";
 import {RegisterUserUserPage} from "../pages/RegisterUserPage/RegisterUserPage.index.jsx";
+import {HomePage} from "../pages/HomePage/HomePage.index.jsx";
 
 export const Routers = () => {
     const router = createBrowserRouter(
@@ -29,6 +30,10 @@ export const Routers = () => {
                     {
                         path: "/create-password",
                         element: <CreatePasswordPage/>
+                    },
+                    {
+                        path: "/home",
+                        element: <HomePage/>
                     }
 
                 ]

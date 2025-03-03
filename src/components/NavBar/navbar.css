@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    padding: 0 5rem;
+    align-self: stretch;
+}
+
+.navbar__menu-icon-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.navbar__menu-icon-zone i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--azul-noite);
+}
+
+.navbar__menu-icon-zone__title {
+    color: var(--azul-noite);
+    font-family: Montserrat, sans-serif;
+    font-size: var(--font-h6, 1.25rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.navbar__buttons-zone {
+    display: flex;
+    gap: 0.625rem;
+
+}
+
+.navbar__buttons-zone i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--azul-noite);
+}
