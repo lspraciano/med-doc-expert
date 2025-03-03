@@ -1,8 +1,8 @@
 import "./register-user-page.css";
-import {LoginInput} from "../../components/LoginInput/LoginInput.index.jsx";
 import {useNavigate} from "react-router-dom";
 import {BasicButton} from "../../components/BasicButton/BasicButton.index.jsx";
 import {useState} from "react";
+import {BasicInput} from "../../components/BasicInput/BasicInput.index.jsx";
 
 export const RegisterUserUserPage = () => {
     const [email, setEmail] = useState("");
@@ -47,7 +47,7 @@ export const RegisterUserUserPage = () => {
                             <p>
                                 Informe um e-mail válido para registrar sua conta.
                             </p>
-                            <LoginInput
+                            <BasicInput
                                 id={"2"}
                                 placeholder={"Email"}
                                 onChange={

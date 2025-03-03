@@ -1,8 +1,9 @@
 import "./create-password-page.css";
-import {LoginInput} from "../../components/LoginInput/LoginInput.index.jsx";
 import {useNavigate} from "react-router-dom";
 import {BasicButton} from "../../components/BasicButton/BasicButton.index.jsx";
 import {useState} from "react";
+import {BasicInput} from "../../components/BasicInput/BasicInput.index.jsx";
+import {CircularCheckbox} from "../../components/CircularCheckbox/CircularCheckbox.index.jsx";
 
 export const CreatePasswordPage = () => {
     const [password, setPassword] = useState("");
@@ -45,7 +46,7 @@ export const CreatePasswordPage = () => {
                         <div className={"create-password-page__form-zone__create-password__content__actions-zone"}>
                             <div
                                 className={"create-password-page__form-zone__create-password__content__actions-zone__inputs"}>
-                                <LoginInput
+                                <BasicInput
                                     id={"2"}
                                     label={"Senha"}
                                     placeholder={"Digite sua senha"}
@@ -53,7 +54,7 @@ export const CreatePasswordPage = () => {
                                         (event) => setPassword(event.target.value)
                                     }
                                 />
-                                <LoginInput
+                                <BasicInput
                                     id={"2"}
                                     label={"Confirmar Senha"}
                                     placeholder={"Repita sua senha"}
@@ -63,8 +64,20 @@ export const CreatePasswordPage = () => {
                                 />
                             </div>
                             <div
-                                className={"create-password-page__form-zone__create-password__content__actions-zone__feedbacks"}>
-
+                                className={"create-password-page__form-zone__create-password__content__actions-zone__feedbacks"}
+                            >
+                                <CircularCheckbox
+                                    id={"cir-ckb-1"}
+                                    label={"Use pelo menos 8 caracteres"}
+                                />
+                                <CircularCheckbox
+                                    id={"cir-ckb-2"}
+                                    label={"Misture letras maiúsculas e minúsculas"}
+                                />
+                                <CircularCheckbox
+                                    id={"cir-ckb-3"}
+                                    label={"Inclua números e símbolos (!, @, #, etc.)"}
+                                />
                             </div>
                         </div>
                         <div className={"create-password-page__form-zone__create-password__content__button-zone"}>

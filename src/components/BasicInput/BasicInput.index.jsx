@@ -1,6 +1,7 @@
-import "./login-input.css";
+import "./basic-input.css";
+import PropTypes from "prop-types";
 
-export const LoginInput = (
+export const BasicInput = (
     {
         id,
         label,
@@ -9,20 +10,26 @@ export const LoginInput = (
     }
 ) => {
     return (
-        <div className="login-input">
+        <div className="basic-input">
             {
                 label && (
-                    <label htmlFor={id} className="login-input__label">
+                    <label htmlFor={id} className="basic-input__label">
                         {label}
                     </label>
                 )
             }
             <input
                 id={id}
-                className="login-input__input"
+                className="basic-input__input"
                 {...inputProps}
                 placeholder={placeholder}
             />
         </div>
     );
+};
+
+BasicInput.propTypes = {
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    placeholder: PropTypes.string,
 };

@@ -1,8 +1,8 @@
 import "./recovery-password-page.css";
-import {LoginInput} from "../../components/LoginInput/LoginInput.index.jsx";
 import {useNavigate} from "react-router-dom";
 import {BasicButton} from "../../components/BasicButton/BasicButton.index.jsx";
 import {useState} from "react";
+import {BasicInput} from "../../components/BasicInput/BasicInput.index.jsx";
 
 export const RecoveryPasswordPage = () => {
     const [email, setEmail] = useState("");
@@ -48,7 +48,7 @@ export const RecoveryPasswordPage = () => {
                             <p>
                                 Digite seu e-mail para receber o link de redefinição de senha.
                             </p>
-                            <LoginInput
+                            <BasicInput
                                 id={"2"}
                                 placeholder={"Email"}
                                 onChange={

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import "./login-checkbox.css";
+import "./circular-checkbox.css";
 
-export const LoginCheckbox = (
+export const CircularCheckbox = (
     {
         id,
         label,
@@ -9,16 +9,16 @@ export const LoginCheckbox = (
     }
 ) => {
     return (
-        <div className="login-checkbox">
+        <div className="circular-checkbox">
             <input
                 id={id}
                 type="checkbox"
-                className="login-checkbox__input"
+                className="circular-checkbox__input"
                 {...checkboxProps}
             />
             {
                 label && (
-                    <label htmlFor={id} className="login-checkbox__label">
+                    <label htmlFor={id} className="circular-checkbox__label">
                         {label}
                     </label>
                 )
@@ -27,7 +27,7 @@ export const LoginCheckbox = (
     );
 };
 
-LoginCheckbox.propTypes = {
+CircularCheckbox.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
 };

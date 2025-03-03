@@ -1,10 +1,10 @@
-.login-checkbox {
+.basic-checkbox {
     display: flex;
     align-items: center;
     gap: 0.625rem;
 }
 
-.login-checkbox__input {
+.basic-checkbox__input {
     appearance: none;
     -webkit-appearance: none;
     width: 1.5rem;
@@ -16,12 +16,12 @@
     position: relative;
 }
 
-.login-checkbox__input:checked {
+.basic-checkbox__input:checked {
     background-color: var(--azul-noite);
 }
 
 
-.login-checkbox__input:checked::after {
+.basic-checkbox__input:checked::after {
     content: "";
     position: absolute;
     top: 0.2rem;
@@ -33,6 +33,7 @@
     transform: rotate(45deg);
 }
 
-.login-checkbox__label {
+.basic-checkbox__label {
     cursor: pointer;
+    color: var(--azul-noite);
 }

@@ -1,9 +1,9 @@
 import "./login-page.css";
-import {LoginInput} from "../../components/LoginInput/LoginInput.index.jsx";
-import {LoginCheckbox} from "../../components/LoginCheckbox/LoginCheckbox.index.jsx";
 import {useNavigate} from "react-router-dom";
 import {BasicButton} from "../../components/BasicButton/BasicButton.index.jsx";
 import {useState} from "react";
+import {BasicCheckbox} from "../../components/BasicCheckbox/BasicCheckbox.index.jsx";
+import {BasicInput} from "../../components/BasicInput/BasicInput.index.jsx";
 
 export const LoginPage = () => {
     const [email, setEmail] = useState("");
@@ -25,7 +25,7 @@ export const LoginPage = () => {
                     <div className={"login-page__form-zone__input-zone__content"}>
                         <p>Entrar</p>
                         <div className={"login-page__form-zone__input-zone__content__inputs-zone"}>
-                            <LoginInput
+                            <BasicInput
                                 id={"1"}
                                 label={"Email"}
                                 placeholder={"Email"}
@@ -33,7 +33,7 @@ export const LoginPage = () => {
                                     (event) => setEmail(event.target.value)
                                 }
                             />
-                            <LoginInput
+                            <BasicInput
                                 id={"2"}
                                 label={"Senha"}
                                 placeholder={"Senha"}
@@ -44,7 +44,7 @@ export const LoginPage = () => {
                         </div>
                         <div className={"login-page__form-zone__input-zone__content__actions-zone"}>
                             <div className={"login-page__form-zone__input-zone__content__actions-zone__link-zone"}>
-                                <LoginCheckbox
+                                <BasicCheckbox
                                     id={"10"}
                                     label={"Lembrar Senha"}
                                     checked={isChecked}
