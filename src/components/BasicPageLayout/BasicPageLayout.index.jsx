@@ -26,13 +26,10 @@ export const BasicPageLayout = (
                     onMenuToggle={handleToggleMenu}
                 />
             </div>
-            {
-                isMenuOpen
-                &&
-                <SideBar
-                    onClose={handleToggleMenu}
-                />
-            }
+            <SideBar
+                onClose={handleToggleMenu}
+                isActive={isMenuOpen}
+            />
             <div className={"basic-page-layout__content"}>
                 {children}
             </div>
