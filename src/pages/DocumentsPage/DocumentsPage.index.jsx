@@ -25,7 +25,11 @@ export const DocumentsPage = () => {
             <BasicModal
                 isOpen={isModalOpen}
             >
-                <DocumentRegister/>
+                <DocumentRegister
+                    closeModal={
+                        () => setIsModalOpen(false)
+                    }
+                />
             </BasicModal>
             <div className={"documents"}>
                 <div className={"documents__input-zone"}>
@@ -42,7 +46,13 @@ export const DocumentsPage = () => {
                             iconTwo={<i className="bx bxs-toggle-right"></i>}
                             label={"Ver desabilitados"}
                         />
-                        <i className="bx bxs-plus-square" onClick={() => setIsModalOpen(true)}></i>
+                        <i
+                            className="bx bxs-plus-square"
+                            onClick={
+                                () => setIsModalOpen(true)
+                            }
+                        >
+                        </i>
                     </div>
                 </div>
                 <div className={"documents__table-zone"}>

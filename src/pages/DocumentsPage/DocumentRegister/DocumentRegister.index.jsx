@@ -2,8 +2,13 @@ import "./document-register.css";
 import {BasicInput} from "../../../components/BasicInput/BasicInput.index.jsx";
 import {DropFile} from "../../../components/DropFile/DropFile.index.jsx";
 import {OutlinedButton} from "../../../components/OutlinedButton/OutlinedButton.index.jsx";
+import PropTypes from "prop-types";
 
-export const DocumentRegister = () => {
+export const DocumentRegister = (
+    {
+        closeModal
+    }
+) => {
     return (
         <div className={"document-register"}>
             <div className={"document-register__title-zone"}>
@@ -47,7 +52,8 @@ export const DocumentRegister = () => {
             <div className={"document-register__button-zone"}>
                 <div className={"document-register__button-zone__close-button"}>
                     <OutlinedButton
-                        label={"Entrar"}
+                        label={"Fechar"}
+                        onClick={closeModal}
                     />
                 </div>
                 <div className={"document-register__button-zone__save-button"}>
@@ -60,3 +66,8 @@ export const DocumentRegister = () => {
         </div>
     );
 };
+
+
+DocumentRegister.prototype = {
+    closeModal: PropTypes.func.isRequired
+}
