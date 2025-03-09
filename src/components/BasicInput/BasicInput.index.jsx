@@ -7,25 +7,39 @@ export const BasicInput = (
         label,
         placeholder,
         isPassword,
+        icon,
+        onIconClick,
         ...inputProps
     }
 ) => {
     return (
         <div className="basic-input">
             {
-                label && (
+                label
+                && (
                     <label htmlFor={id} className="basic-input__label">
                         {label}
                     </label>
                 )
             }
-            <input
-                id={id}
-                className="basic-input__input"
-                type={isPassword ? "password" : "text"}
-                {...inputProps}
-                placeholder={placeholder}
-            />
+            <div className="basic-input__input-wrapper">
+                <input
+                    id={id}
+                    className="basic-input__input"
+                    type={isPassword ? "password" : "text"}
+                    placeholder={placeholder}
+                    {...inputProps}
+                />
+                {
+                    icon
+                    && <div
+                        className={`basic-input__icon ${onIconClick ? "basic-input__icon--clickable" : ""}`}
+                        onClick={onIconClick}
+                    >
+                        {icon}
+                    </div>
+                }
+            </div>
         </div>
     );
 };
@@ -33,6 +47,8 @@ export const BasicInput = (
 BasicInput.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string,
-    isPassword: false,
+    isPassword: PropTypes.bool,
     placeholder: PropTypes.string,
+    icon: PropTypes.node,
+    onIconClick: PropTypes.func,
 };

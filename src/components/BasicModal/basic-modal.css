@@ -1,0 +1,13 @@
+.basic-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.basic-modal__content {
+    display: flex;
+}

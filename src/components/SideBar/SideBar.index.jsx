@@ -33,6 +33,7 @@ export const SideBar = (
                                 headTitle={item.headTitle}
                                 headIcon={item.headIcon}
                                 subitems={item.subItems}
+                                path={item.path}
                                 key={item.headTitle + index}
                             />
                         }

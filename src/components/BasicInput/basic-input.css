@@ -19,16 +19,32 @@
     font-family: "Sans Serif Collection", sans-serif;
 }
 
-.basic-input__input {
+.basic-input__input-wrapper {
     display: flex;
+    align-items: center;
     width: 26.8125rem;
     height: 3rem;
-    padding: 0 0.625rem;
-    align-items: center;
-    gap: 0.625rem;
-    border-radius: 0.625rem;
-    opacity: 0.71;
     background: var(--cinza-azulado);
+    border-radius: 0.625rem;
+    padding: 0 0.625rem;
+}
+
+.basic-input__icon {
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+}
+
+.basic-input__icon--clickable {
+    cursor: pointer;
+}
+
+.basic-input__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
     font-family: "Sans Serif Collection", sans-serif;
 }
 

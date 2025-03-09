@@ -1,0 +1,95 @@
+.document-register {
+    display: flex;
+    flex-direction: column;
+    width: 65.125rem;
+    height: 47.8125rem;
+    border-radius: 0.625rem;
+    background: var(--branco-neve);
+    box-shadow: -6px 16px 11.7px 0px rgba(0, 0, 0, 0.25);
+}
+
+.document-register__title-zone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+    align-self: stretch;
+}
+
+.document-register__title-zone p {
+    color: var(--azul-noite);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: var(--font-h4);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.document-register__title-line-zone {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--cinza-chumbo);
+    margin-bottom: 1.55rem;
+}
+
+.document-register__enter-zone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.document-register__enter-line-zone {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--cinza-chumbo);
+    margin-bottom: 1.55rem;
+}
+
+.document-register__inputs-zone__inputs-zone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0 2.5rem;
+    margin-bottom: 1.88rem;
+}
+
+.document-register__inputs-zone__inputs-zone .basic-input {
+    width: 100%;
+}
+
+.document-register__inputs-zone__inputs-zone .basic-input__input-wrapper {
+    width: 100%;
+}
+
+.document-register__inputs-zone__drop-file-zone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+}
+
+.document-register__button-zone {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 2.5rem;
+}
+
+.document-register__button-zone__close-button {
+    width: 8.8125rem;
+}
+
+.document-register__button-zone__save-button {
+    width: 8.8125rem;
+}

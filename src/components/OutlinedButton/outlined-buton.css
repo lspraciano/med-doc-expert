@@ -1,0 +1,42 @@
+.outlined-button {
+    display: flex;
+    min-width: 8.8125rem;
+    height: 3rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 6.25rem;
+    border: 1px solid var(--azul-noite);
+    cursor: pointer;
+    user-select: none;
+}
+
+.outlined-button p {
+    color: var(--azul-noite);
+    font-family: Roboto, sans-serif;
+    font-size: var(--font-p);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.outlined-button--disabled {
+    background: var(--cor-btn-desabil);
+    cursor: unset;
+    pointer-events: none;
+}
+
+.outlined-button--disabled p {
+    opacity: .5;
+    cursor: unset;
+}
+
+.outlined-button:not(.outlined-button--disabled):hover {
+    background-color: var(--azul-noite);
+}
+
+.outlined-button:not(.outlined-button--disabled):hover p {
+    color: var(--branco-neve);
+}

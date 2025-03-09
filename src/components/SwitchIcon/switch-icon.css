@@ -1,0 +1,22 @@
+.switch-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.switch-icon__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.switch-icon__icon i {
+    font-size: 1.5rem;
+}
+
+.switch-icon__label {
+    font-size: 1rem;
+    color: var(--azul-noite, #333);
+}

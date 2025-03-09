@@ -6,12 +6,17 @@ export const menuItems = [
         "subItems": []
     },
     {
-        "headTitle": "User",
-        "headIcon": "bx bxs-user-circle",
+        "headTitle": "Documentos",
+        "headIcon": "bx bxs-file",
         "subItems": [
             {
                 "title": "Cadastrar",
-                "icon": "bx bx-message-square-add",
+                "icon": "bx bxs-cloud-upload",
+                "path": "/documents",
+            },
+            {
+                "title": "Chat",
+                "icon": "bx bx-message-dots",
                 "path": "#",
             },
         ]
