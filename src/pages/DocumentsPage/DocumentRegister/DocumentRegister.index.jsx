@@ -6,7 +6,8 @@ import PropTypes from "prop-types";
 
 export const DocumentRegister = (
     {
-        closeModal
+        closeModal,
+        saveDocument
     }
 ) => {
     return (
@@ -59,6 +60,7 @@ export const DocumentRegister = (
                 <div className={"document-register__button-zone__save-button"}>
                     <OutlinedButton
                         label={"Salvar"}
+                        onClick={saveDocument}
                     />
                 </div>
 
@@ -69,5 +71,6 @@ export const DocumentRegister = (
 
 
 DocumentRegister.prototype = {
-    closeModal: PropTypes.func.isRequired
+    closeModal: PropTypes.func.isRequired,
+    saveDocument: PropTypes.func.isRequired
 }

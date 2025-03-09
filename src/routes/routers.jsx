@@ -7,6 +7,7 @@ import {CreatePasswordPage} from "../pages/CreatePasswordPage/CreatePasswordPage
 import {RegisterUserUserPage} from "../pages/RegisterUserPage/RegisterUserPage.index.jsx";
 import {HomePage} from "../pages/HomePage/HomePage.index.jsx";
 import {DocumentsPage} from "../pages/DocumentsPage/DocumentsPage.index.jsx";
+import {DocumentChatPage} from "../pages/DocumentChatPage/DocumentChatPage.index.jsx";
 
 export const Routers = () => {
     const router = createBrowserRouter(
@@ -39,6 +40,10 @@ export const Routers = () => {
                     {
                         path: "/documents",
                         element: <DocumentsPage/>
+                    },
+                    {
+                        path: "/documents/chat",
+                        element: <DocumentChatPage/>
                     }
 
                 ]

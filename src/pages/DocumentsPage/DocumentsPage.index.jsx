@@ -29,6 +29,9 @@ export const DocumentsPage = () => {
                     closeModal={
                         () => setIsModalOpen(false)
                     }
+                    saveDocument={
+                        () => setIsModalOpen(false)
+                    }
                 />
             </BasicModal>
             <div className={"documents"}>

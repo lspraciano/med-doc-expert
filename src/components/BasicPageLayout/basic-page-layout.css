@@ -9,6 +9,7 @@
     justify-content: flex-start;
     padding: 1rem;
     background-color: var(--cinza-chumbo);
+    overflow: hidden;
 }
 
 .basic-page-layout__navbar-zone {

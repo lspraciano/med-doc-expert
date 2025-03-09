@@ -1,0 +1,98 @@
+export const mockMessages = [
+    {
+        id: 1,
+        type: "user",
+        content: "Olá, poderia me ajudar com uma dúvida sobre o resultado do hemograma?",
+        timestamp: "10:15",
+    },
+    {
+        id: 2,
+        type: "bot",
+        content: "Claro! Me envie a imagem da lâmina para análise e poderei ajudá-lo.",
+        timestamp: "10:15",
+    },
+    {
+        id: 3,
+        type: "user",
+        content: "Aqui está a imagem da lâmina.",
+        timestamp: "10:16",
+    },
+    {
+        id: 4,
+        type: "bot",
+        content: "Analisando a lâmina, percebo uma presença aumentada de neutrófilos segmentados. Isso pode indicar uma infecção bacteriana ou inflamação aguda.",
+        timestamp: "10:17",
+    },
+    {
+        id: 5,
+        type: "user",
+        content: "Entendi. E os linfócitos, estão normais?",
+        timestamp: "10:17",
+    },
+    {
+        id: 6,
+        type: "bot",
+        content: "Os linfócitos estão dentro do intervalo normal esperado. Não há sinais claros de infecção viral neste momento.",
+        timestamp: "10:17",
+    },
+    {
+        id: 7,
+        type: "user",
+        content: "Certo, devo procurar algum médico especialista ou esperar mais tempo?",
+        timestamp: "10:18",
+    },
+    {
+        id: 8,
+        type: "bot",
+        content: "Sugiro procurar um clínico geral inicialmente para uma avaliação mais detalhada e possível solicitação de exames complementares.",
+        timestamp: "10:18",
+    },
+    {
+        id: 9,
+        type: "user",
+        content: "Existe algo preocupante no resultado além dessa alteração nos neutrófilos?",
+        timestamp: "10:19",
+    },
+    {
+        id: 10,
+        type: "bot",
+        content: "Não vejo alterações preocupantes adicionais. Os demais parâmetros parecem estar dentro dos limites normais.",
+        timestamp: "10:19",
+    },
+    {
+        id: 11,
+        type: "user",
+        content: "Poderia me explicar o que são neutrófilos segmentados?",
+        timestamp: "10:20",
+    },
+    {
+        id: 12,
+        type: "bot",
+        content: "Claro! Neutrófilos segmentados são células de defesa que aumentam principalmente em resposta a infecções bacterianas ou situações inflamatórias.",
+        timestamp: "10:20",
+    },
+    {
+        id: 13,
+        type: "user",
+        content: "Existe algo que posso fazer para melhorar esse quadro enquanto aguardo a consulta?",
+        timestamp: "10:21",
+    },
+    {
+        id: 14,
+        type: "bot",
+        content: "Você pode manter uma boa hidratação, repouso e observar sintomas adicionais como febre ou dor, relatando-os ao médico durante a consulta.",
+        timestamp: "10:21",
+    },
+    {
+        id: 15,
+        type: "user",
+        content: "Muito obrigado pela ajuda!",
+        timestamp: "10:22",
+    },
+    {
+        id: 16,
+        type: "bot",
+        content: "Imagina! Estou à disposição caso precise de mais alguma coisa.",
+        timestamp: "10:22",
+    },
+];

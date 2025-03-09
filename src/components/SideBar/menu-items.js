@@ -17,7 +17,7 @@ export const menuItems = [
             {
                 "title": "Chat",
                 "icon": "bx bx-message-dots",
-                "path": "#",
+                "path": "/documents/chat",
             },
         ]
     },
