@@ -1,0 +1,71 @@
+.basic-alert {
+    display: flex;
+    width: 47.5rem;
+    position: fixed;
+    padding: 1rem;
+    z-index: 9999;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+    word-wrap: break-word;
+    right: -50rem;
+    transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.basic-alert--success {
+    color: var(--verde-musgo);
+    border: 1px solid var(--verde-musgo);
+    background: var(--verde-neve);
+}
+
+.basic-alert--error {
+    color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    background: var(--rosa-algodao);
+
+}
+
+.basic-alert--warning {
+    color: var(--laranja-dourado);
+    border: 1px solid var(--laranja-dourado);
+    background: var(--bege-areia);
+
+}
+
+.basic-alert--info {
+    color: var(--azul-nevoado);
+    border: 1px solid var(--azul-nevoado);
+    background: var(--azul-algodao);
+
+}
+
+.basic-alert__text-zone__title {
+    color: var(--azul-noite);
+    font-family: Montserrat, sans-serif;
+    font-size: var(--font-h6);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.basic-alert__text-zone__message {
+    color: var(--cinza-grafite, #4E4F4D);
+    font-family: "Sans Serif Collection", sans-serif;
+    font-size: var(--font-message-alert,);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.basic-alert__icon-zone i {
+    font-size: 1.625rem;
+    flex-shrink: 0;
+}
+
+.basic-alert--visible {
+    right: 6rem;
+    opacity: 1;
+}

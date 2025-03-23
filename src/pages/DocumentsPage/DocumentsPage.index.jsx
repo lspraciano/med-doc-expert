@@ -7,6 +7,7 @@ import {useState} from "react";
 import {BasicModal} from "../../components/BasicModal/BasicModal.index.jsx";
 import {DocumentRegister} from "./DocumentRegister/DocumentRegister.index.jsx";
 import documentsDB from "./documentsDB.json";
+import {BasicAlert} from "../../components/BasicAlert/BasicAlert.index.jsx";
 
 export const DocumentsPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,6 +15,14 @@ export const DocumentsPage = () => {
     const [editingDoc, setEditingDoc] = useState(null);
     const [showInactiveDocuments, setShowInactiveDocuments] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
+    const [alert, setAlert] = useState(
+        {
+            visible: false,
+            message: "",
+            type: "",
+        }
+    );
+
     const handleEdit = (id) => {
         const docToEdit = documents.find((doc) => doc.id === id);
         setEditingDoc(docToEdit);
@@ -21,19 +30,33 @@ export const DocumentsPage = () => {
     };
 
     const handleSaveDocument = (doc) => {
-        if (editingDoc) {
-            const updatedDocuments = documents.map((item) =>
-                item.id === editingDoc.id ? {...item, ...doc} : item
-            );
-            setDocuments(updatedDocuments);
-            setEditingDoc(null);
-        } else {
-            const newDoc = {...doc, isActive: true};
-            const newDocWithId = {id: documents.length + 1, ...newDoc};
-            setDocuments((prev) => [...prev, newDocWithId]);
-        }
+        const isEditing = Boolean(editingDoc);
 
+        setDocuments(prevDocs => {
+            if (isEditing) {
+                return prevDocs.map(item =>
+                    item.id === editingDoc.id ? {...item, ...doc} : item
+                );
+            } else {
+                const newDocWithId = {id: prevDocs.length + 1, isActive: true, ...doc};
+                return [...prevDocs, newDocWithId];
+            }
+        });
+
+        setAlert(
+            {
+                visible: true,
+                message: isEditing ? "Editado com sucesso" : "Salvo com sucesso",
+                type: "success",
+            }
+        );
+
+        setEditingDoc(null);
         setIsModalOpen(false);
+
+        setTimeout(() => {
+            setAlert(prevAlert => ({...prevAlert, visible: false}));
+        }, 3000);
     };
 
     const handleToggleActive = (id) => {
@@ -61,6 +84,11 @@ export const DocumentsPage = () => {
         <BasicPageLayout
             title={"Documentos"}
         >
+            <BasicAlert
+                message={alert.message}
+                visible={alert.visible}
+                type={alert.type}
+            />
             <BasicModal
                 isOpen={isModalOpen}
             >
