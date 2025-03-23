@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import PropTypes from "prop-types";
 import "./switch-icon.css";
 
@@ -8,18 +7,14 @@ export const SwitchIcon = (
         iconTwo,
         onSwitch,
         label,
-        initialState = false,
+        value = false,
     }
 ) => {
-
-    const [isSwitched, setIsSwitched] = useState(initialState);
-
     const handleToggle = (event) => {
         event.stopPropagation();
-        const newState = !isSwitched;
-        setIsSwitched(newState);
+        const newValue = !value;
         if (onSwitch) {
-            onSwitch(newState);
+            onSwitch(newValue);
         }
     };
 
@@ -30,10 +25,10 @@ export const SwitchIcon = (
         >
             <div className="switch-icon__icon">
                 {
-                    isSwitched ?
-                        iconTwo
-                        :
+                    value ?
                         iconOne
+                        :
+                        iconTwo
                 }
             </div>
             {
@@ -52,5 +47,5 @@ SwitchIcon.propTypes = {
     iconTwo: PropTypes.node.isRequired,
     onSwitch: PropTypes.func,
     label: PropTypes.string,
-    initialState: PropTypes.bool,
+    value: PropTypes.bool,
 };

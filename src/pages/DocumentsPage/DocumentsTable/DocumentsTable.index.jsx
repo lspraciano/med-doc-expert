@@ -5,7 +5,8 @@ import {SwitchIcon} from "../../../components/SwitchIcon/SwitchIcon.index.jsx";
 export const DocumentsTable = (
     {
         data,
-        onEdit
+        onEdit,
+        onToggleActive
     }
 ) => {
     return (
@@ -36,6 +37,8 @@ export const DocumentsTable = (
                                     iconTwo={
                                         <i className="bx bxs-toggle-right"></i>
                                     }
+                                    value={row.isActive}
+                                    onSwitch={() => onToggleActive(row.id)}
                                 />
                                 <button
                                     onClick={
@@ -66,5 +69,6 @@ DocumentsTable.propTypes = {
             }
         )
     ).isRequired,
-    onEdit: PropTypes.func.isRequired
+    onEdit: PropTypes.func.isRequired,
+    onToggleActive: PropTypes.func.isRequired
 };
